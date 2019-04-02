@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="shortcut icon" href="images/favicon.ico"/>
+	 <meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=no">
+	<!-- 新 Bootstrap4 核心 CSS 文件 -->
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script type="text/javascript"></script>
+	<script src="js/iconfont.js">
+		public function _initialize()  
+    {  
+        $agent = $_SERVER['HTTP_USER_AGENT'];
+        $toUrl = 'list/draft/index.html';//页面跳转的页面-》移动端页面
+		if(strpos($agent,"comFront") || strpos($agent,"iPhone") || strpos($agent,"MIDP-2.0") || strpos($agent,"Opera Mini") || strpos($agent,"UCWEB") || strpos($agent,"Android") || strpos($agent,"Windows CE") || strpos($agent,"SymbianOS"))
+		header("Location:$toUrl");
+    }  
+
+	</script>
+	 
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	 
+	 
+	<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+	<script src="js/bootstrap.min.js"></script>
+	
+	<style type="text/css">
+	    
+
+	    .icon {
+			   width: 1em; height: 1em;
+			   vertical-align: -0.15em;
+			   fill: currentColor;
+			   overflow: hidden;
+			}
+        *{list-style: none;
+        	margin: 0;
+        	padding: 0;
+           text-decoration: none;}
+
+	    .row{margin: 0;}       
+		.wrap1{
+			   height: 300px;
+			   width: 100%;	 
+			   background-image: url(images/20.png);
+			   background-attachment: fixed;  
+		    }
+		.wrap1-1{text-align: center;}  
+		.box1{width: 500px;
+		      height: 200px;
+		     margin: 0px auto;
+		     text-align: center;
+		     padding: 0;} 
+		.logo {width: 300px;
+			     margin: 20px auto;
+		} 
+		.logo img{width: 300px;padding-right: 18px;
+		 		  transition: .3s;}  
+		.logo img:hover {transform: scale(1.2);}  
+		.navbar{background: #828282;
+		        }
+
+  
+/*******轮播*********/
+     
+		.wrap-carousel{width: 75%;
+		               height: auto;
+
+		              border-radius: 0px;
+		              margin-top: 50px;
+		             overflow: hidden;}  
+		.container-fluid-tit {width: 100%;
+		                     height: 80px;}              
+		.container-fluid-tit h2{text-align: center;
+		                        text-shadow: 4px 6px 25px #91989F;
+		                        color:#535953; 
+		                     }               
+		.carousel-inner {
+			    
+			    border-radius: 0px;
+			}    
+		.carousel-inner img{width: 100%;
+		                    height: 100%;}	   
+
+		.carousel-item  img{width: 100%;
+		                    height: 100%;}                  	
+
+		.wrap2 {
+		        margin: 0 auto; 
+		        padding: 30px 13%;
+		        
+		      }  
+		.wrap2 .container-fluid {
+		    width: 100%;
+		    padding-right: 10px;
+		    padding-left: 10px;
+		    margin-right: auto;
+		    margin-left: auto;
+			}
+		.box2-1 {
+		         height: 450px;
+		         
+		         padding: 10px 10px;
+		         }
+		.box2-1-1{
+		         width: 100%;
+		         height: 100%;
+		         overflow: hidden;
+		         position: relative;
+		         border-radius: 0px;
+		        }         
+		.wrap3{background: #7BA23F; 
+			   height: 300px;
+			   width: 100%;
+			   overflow: hidden;
+			   background-image: url(images/21.jpg);  
+			   background-attachment: fixed;
+			   margin-top: 55px;  
+		    } 
+		.wrap3-1{height: 300px;
+		         }  
+		.box3{width: 500px;
+		      height: 200px;
+		     margin: 100px auto;
+		     text-align: center;
+		     padding: 0;} 
+		 .wrap4 {
+		         height: 200px;
+		         margin: 10px 0;
+		         padding:  0  0;
+				 
+				 z-index: 2;
+
+		         }   
+		.wrap4-1{width: 100%;
+		         height: 100%;
+		         background: red;
+				 border-radius: 0px;
+			     }
+
+		.wrap4-bg-1{background: url(images/wrap2/31.jpg);}         
+		.wrap4-bg-2{background: url(images/wrap2/33.jpg);}
+		.wrap4-bg-3{background: url(images/wrap2/30.jpg);}
+
+		.text1{width: 100%;
+		       height: 100%;
+		       text-align: center;
+		       transition: .7s;
+		       padding-top: 60px;
+		       position: absolute;
+		       z-index: 5;
+		       text-shadow: 5px 5px 6px #fff;
+   			   font-size: 21px;
+		       }
+        
+		.text1:hover{opacity: 0;
+		             transform:scale(1.5);} 
+		                  
+		.text1 h2{
+		          padding-top: 28%;
+		         }    
+
+		.text2 img{height: 100%;
+			       width: 100%;
+		           position: absolute;
+		           top: 0;
+		           left: 0%;
+		           z-index: 0;
+		           transform: scale(1.5);
+		           transition: .7s;
+		           transition-delay: .2s;
+		          }                
+	    .box2-1-1:hover .text2 img{ transform: scale(1); }  
+
+	    .color1{background-image: url(images/wrap2/6.jpg); color: #fff;text-shadow: 5px 5px 10px #000;}	 
+	    .color2{background-image: url(images/wrap2/4.jpg); color: #fff;text-shadow: 5px 5px 10px #000;}
+	    .color3{background-image: url(images/wrap2/2.gif); color: #fff;text-shadow: 5px 5px 10px #000;}
+	    .color4{background-image: url(images/wrap2/1.gif); color: #fff;text-shadow: 5px 5px 10px #000;}
+	    .color5{background-image: url(images/wrap2/3.jpg); color: #fff;text-shadow: 5px 5px 10px #000;}
+	    .color6{background-image: url(images/wrap2/32.jpg.); color: #fff;text-shadow: 5px 5px 10px #000;}
+
+
+
+
+	    .tip{height: 100px;
+		     width: 100%;
+		     background: #D0104C;
+		     padding-top: 20px;
+		    }
+		.tip h2{text-align: center;
+				       line-height: 30px;
+				        color: #fff;
+				       font-size: 1em;
+				      } 
+
+
+
+				      		
+	    @media screen and (max-width:768px) {
+			 .wrap1{ 
+			       height: 230px;}
+			 .logo {width: 200px;
+			       margin: 20px auto;} 
+			 .logo img{width: 200px;padding-right: 0px;}          
+			 .wrap2{padding: 0px 15px;}
+			 .box2-1{ padding: 0px 0px;}
+			 .box2-1-1{border-radius: 0;}         
+			 .wrap3{
+			 	    height: 200px;
+			 	    margin-top:0px;  
+			        } 
+			 .wrap4{padding: 0;
+			       margin:0;
+			       display: none;}
+			  .wrap4-1{border-radius: 0;}      
+			  .container-fluid-tit {display: none;}
+			  .container-fluid{padding: 0;}
+			  .wrap-carousel{width: 100%;
+		               height: auto;
+
+		              border-radius: 00px;
+		              margin-top: 0px;} 
+		      .carousel-inner {
+			    
+			    border-radius: 0px;
+			}     
+			.none{display: none;}     
+			#app {
+			  display: none;
+			 
+			}
+			#stage{display: none;}
+			.tip  h2{font-size: .5em;}    
+		} 
+		@media screen and (max-width:768px) {
+			.box1, .box3 {width:300px;
+			      font-size: 1em;
+			     }
+		.box1 h1, .box3 h1{font-size: 1.5em;}  
+	 
+
+		}  	
+
+
+
+		
+	</style>
+	 <link rel="stylesheet" type="text/css" href="css/sidebar.css">
+
+</head>
+
+<body>
+	
+    <div class="tip">
+    	<h2>还请您使用桌面版谷歌浏览器访问，因为只有首页适配移动,您现在点击其他页面</h2>
+    	<h2>可能造成不兼容的问题。</h2>
+    </div>
+    <div class="sidrbar-1">
+   	   <ul>
+   	   	   <li class="draft-box">
+   	   	   	    <a href="list/draft/index.html"><svg class="icon" aria-hidden="true">
+					  <use xlink:href="#icon-caogaoxiang"></use>
+					</svg></a>
+   	   	   	    	<div class="draft">
+   	   	   	    		<h3> <--[GO!] < (￣︶￣) >  先看看网站导航 </h3>
+   	   	   	    	</div>
+   	   	   	    
+   	   	   </li>
+   	   	   <li class="content-box">
+   	   	   	        <svg class="icon" aria-hidden="true">
+					  <use xlink:href="#icon-lianxi"></use>
+					</svg>
+   	   	   	    	<div class="content">
+   	   	   	    		<ul>
+   	   	   	    			<li class="wx">
+   	   	   	    				<img src="images/wx2.jpg">
+   	   	   	    				<div class="wx-pic">
+   	   	   	    					<img src="images/wx.png">
+   	   	   	    				</div>
+   	   	   	    			</li>
+   	   	   	    			<li class="qq">
+   	   	   	    				<img src="images/qq2.jpg">
+   	   	   	    				<div class="qq-pic">
+   	   	   	    					<img src="images/qq.png">
+   	   	   	    				</div>
+   	   	   	    			</li>
+   	   	   	    		</ul>
+   	   	   	    	</div>
+   	   	   </li> 
+   	   </ul>
+    </div>
+
+    <a href="#"><div class="sidrbar-2">
+   	       <svg class="icon" aria-hidden="true">
+					  <use xlink:href="#icon-shouye1"></use>
+			</svg>
+    </div></a>
+    
+   <div class="container-fluid wrap1"> 
+	  <div class="row">
+	  	
+	  	  <div class="col-12 col-md-6 offset-md-3 ">
+	  	  	 <div class="logo wow bounceInUp"  data-wow-delay=".0s">
+	  	  	 	<img src="images/logo.png">
+	  	  	 </div>
+		     <div class="wrap1-1"> 
+		     <h1 class="wow bounceInUp" data-wow-delay=".2s">Think more ++</h1>
+		     <p  class=" wow bounceInUp" data-wow-delay=".4s">多一点思考 , 独具匠心</p>
+		     </div>
+	      </div>
+	  </div>	  
+   </div>
+
+   <nav class="navbar navbar-expand-md  navbar-dark">
+
+	  <a class="navbar-brand wow bounceInLeft"  href="#">Quick choose:</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse " id="collapsibleNavbar">
+	    <ul class="navbar-nav">
+	      <li class="nav-item wow bounceInLeft"  data-wow-delay=".15s">
+	        <a class="nav-link" href="list/view/index.html">看风景</a>
+	      </li>
+	      <li class="nav-item wow bounceInLeft"  data-wow-delay=".3s">
+	        <a class="nav-link" href="list/food/index.html">赏美食</a>
+	      </li>
+	      <li class="nav-item wow bounceInLeft"  data-wow-delay=".45s">
+	        <a class="nav-link" href="list/vr/index.html">VR</a>
+	      </li>
+	      <li class="nav-item wow bounceInLeft"  data-wow-delay=".6s">
+	        <a class="nav-link" href="list/year/index.html">过新年</a>
+	      </li>
+	      <li class="nav-item wow bounceInLeft"  data-wow-delay=".75s">
+	        <a class="nav-link" href="list/more/index.html">More</a>
+	      </li>    
+        </ul>
+       </div>  
+   </nav>
+   <div class="container-fluid wrap-carousel">
+   	    <div  class="row">
+   	    	<div class="container-fluid-tit"><h2>{ 精选照片 }</h2></div>
+   	    </div>
+   	    <div id="demo" class="carousel slide" data-ride="carousel">
+		  <ul class="carousel-indicators">
+		    <li data-target="#demo" data-slide-to="0" class="active"></li>
+		    <li data-target="#demo" data-slide-to="1"></li>
+		    <li data-target="#demo" data-slide-to="2"></li>
+		  </ul>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="images/c1.jpg">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="images/c2.jpg">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="images/c3.jpg">
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+		    <span class="carousel-control-prev-icon"></span>
+		  </a>
+		  <a class="carousel-control-next" href="#demo" data-slide="next">
+		    <span class="carousel-control-next-icon"></span>
+		  </a>
+		 
+		</div>
+   </div>
+   <div class="container-fluid wrap2">
+		<div class="row">
+			<div class="container-fluid-tit"><h2>< 想去哪里? ></h2></div>
+			<div class="container-fluid ">
+		   		<div class="row">
+		   			<div class="col-md-12wrap4">
+		   				<div class="wrap4-1 wrap4-bg-1"></div>
+		   			</div>
+		   		</div>
+		    </div>
+			<div  class="col-12 col-sm-6 col-md-4 box2-1">
+				<a href="list/view/index.html"><div class="box2-1-1">
+					<div class="text1 color1">	
+						<h2 class=" wow bounceInUp">看风景</h2>
+					</div>
+					<div class="text2">
+						<img src="images/100.png">
+					</div>
+					
+				</div></a>
+			</div>
+
+			<div  class="col-12 col-sm-6 col-md-4 box2-1">
+				<a href="list/food/index.html"><div class="box2-1-1">
+						
+					<div class="text1 color2">	
+						<h2  class=" wow bounceInUp">赏美食</h2>
+					</div>
+					<div class="text2">
+						<img src="images/101.png">
+					</div>
+				</div></a>
+			</div>
+			<div  class="col-12 col-sm-6 col-md-4 box2-1">
+				<a href="list/vr/index.html"><div class="box2-1-1">
+					<div class="text1 color3">	
+						<h2  class=" wow bounceInUp">VR</h2>
+					</div>
+					<div class="text2">
+						<img src="images/102.png">
+					</div>
+				</div></a>
+			</div>
+			<div class="container-fluid  ">
+		   		<div class="row">
+		   			<div class="col-md-12 wrap4">
+		   				<div class="wrap4-1 wrap4-bg-2"></div>
+		   			</div>
+		   		</div>
+		    </div>
+			<div  class="col-12 col-sm-6 col-md-4 box2-1">
+				<a href="list/year/index.html"><div class="box2-1-1">
+					<div class="text1 color4">	
+						<h2  class=" wow bounceInUp">过新年</h2> 
+					</div>
+					<div class="text2">
+						<img src="images/104.png">
+					</div>
+				</div></a>
+			</div>
+			<div  class="col-12 col-sm-6 col-md-4 box2-1">
+				<a href="list/more/index.html"><div class="box2-1-1">
+					<div class="text1 color5">	
+						<h2  class=" wow bounceInUp">more</h2>
+					</div>
+					<div class="text2">
+						<img src="images/wrap2/33.jpg">
+					</div>
+				</div><a href=""></a>
+			</div>
+			<div  class="col-12 col-sm-6 col-md-4 box2-1 ">
+				<a href="list/draft/index.html"><div class="box2-1-1">
+					<div class="text1 color6">	
+						<h2 class=" wow bounceInUp">目录&Animation</h2>
+					</div>
+					<div class="text2">
+						<img src="images/wrap2/30.jpg">
+					</div>
+				</div></a>
+			</div>
+			<div class="container-fluid  ">
+		   		<div class="row">
+		   			<div class="col-md-12 wrap4">
+		   				<div class="wrap4-1 wrap4-bg-3"></div>
+		   			</div>
+		   		</div>
+		    </div>
+		</div>
+   </div>
+   
+   <div class="container-fluid wrap3"> 
+	  <div class="row">
+	  	  <div class="col-12 col-md-6 offset-md-3 wrap3-1">
+	  	  	<div class="box3">
+		     <h1  class=" wow bounceInUp">Think More ++</h1>
+		     <p  class=" wow bounceInUp">永远的相信自己，大胆的去做！</p>
+		    </div> 
+	      </div>
+	  </div>	  
+   </div>
+   <script src="js/wow.min.js"></script>
+<script>
+if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+	new WOW().init();
+};
+</script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

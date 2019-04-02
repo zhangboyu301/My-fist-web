@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>过新年</title>
+	<link rel="shortcut icon" href="../../images/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="../../css/component1.css" />
+    <script src="../../js/modernizr-2.6.2.min.js"></script>
+    
+	<style type="text/css">
+	    html, body{width: 100%;
+			       height: 100%;}
+		*{padding: 0;
+		  margin: 0;
+		  }	 
+
+	    *{text-decoration: none;}  
+	    #canvas{width: 100%;
+	            height: 100%;
+	            position: fixed;
+		        top: 0;
+		        left: 0;
+		        z-index: 1;
+		    }    
+		.wrap1{
+			   width: 100%;
+			   height: 100%;
+			   min-width: 1200px;
+			   background-image: url(imgs/2.jpg);
+			   background-size: 100% 100%;
+			   
+			   z-index: -10;
+			}
+	   	
+		.wrap2, .wrap3{
+			   width: 100%;
+			   transition: .5s;
+			   margin: 50px 0;
+			   /*background: #CB1B45;*/
+			}	
+		/*.wrap2-1 :hover{background: #DB4D6D;color:#fff;}
+		.wrap2-2 :hover{background: #DB4D6D;color:#fff;}	
+		.wrap2-3 :hover{background: #DB4D6D;color:#fff;}	
+		.wrap2-4 :hover{background: #DB4D6D;color:#fff;}		
+		.wrap3 :hover{background: #DB4D6D;color:#fff; }	*/
+		.wrap-ct{width: 1200px;
+			     margin: 80px auto;
+		         }	
+		.wrap-tit{width: 100%;
+		          height: 100px;
+		          font-size: 30px;
+		          position: relative;}   
+		.wrap-tit h2{text-align: center;
+		             line-height: 100px;
+		             text-shadow: 17px 12px 20px #FBE251;
+		             color: #E83015;
+		            } 
+		.img-bg{width: 100px;
+		        height: 100px;
+		      position: absolute;
+		      left: 56%;
+		      top: -100%;}             
+		.img-bg img{width:190%;
+		            height: 300%; }                                   
+		.wrap2-con{width: 1200px;
+		           height: 500px;
+		           position: relative;
+		          } 
+		.wrap2-con-l {width: 200px;
+			          height: 200px;
+			          position: sticky;
+			          top: 10px;
+		              float: left;
+		              border-radius: 50%;
+		              overflow: hidden;
+		             } 
+		.wrap2-con-l img{width: 100%;
+		                 height: 100%;
+		                 }
+		.wrap2-con-r {width:900px;
+		              height: 400px;
+		              float: right;
+		              padding: 50px 30px 50px 70px; 
+		               }
+		               
+		.wrap2-con-r h2{line-height: 100px;
+		                font-size: 33px;
+		                color: #F75C2F;
+
+		             }
+		.wrap2-con-r p{line-height: 50px;
+		               font-size: 16px; 
+		               margin: 20px 0;} 
+		.wrap3-ct{width: 1200px;
+		         overflow: hidden;
+		         margin: 0 auto;}                      
+		.wrap3-list{width: 600px;
+		            height: 500px;
+		            float: left;
+		            padding: 25px 0 ;
+		            margin: 20px 0;
+		        }    
+		.wrap3-l{float: left;
+		         height: 500px;
+		         width: 300px;
+		        }    
+		.wrap3-l img{width: 100%;
+		             height: 100%;}                           
+
+        .wrap4{width: 100%;
+               }	    
+        .wrap4-ct{width: 1200px;
+               height: 500px;
+               margin: 80px auto;
+              }  
+        .wrap4-list-l{width: 800px;
+                      height: 500px;
+                      float: left;}
+        .wrap4-list-r{width: 400px;
+                      height: 500px;
+                      float: left;
+
+                     }   
+        .wrap4-list-l img{width: 100%;
+                          height: 100%;}       
+        .wrap4-list-r p{text-indent: 70px;
+                        font-size: 17px;
+                        line-height: 40px;
+                        margin: 0px 35px;}  
+        .wrap3-l h3{text-align: center;
+                   line-height: 100px;
+                  font-size: 30px;
+                  }               
+		.wrap3-l span{text-align:right;
+			         display: block;
+			         margin-right: 80px;
+			         line-height: 30px;
+		            }
+		.wrap3-l p{text-align: center;
+		           line-height: 50px;} 
+		.footer{width: 100%;
+        	    height: 300px;
+        	    background: #CB1B45; 
+        	    margin-top: 100px;
+        	    min-width: 1200px;
+        	    }
+        .footer h2{line-height: 300px; 
+                  text-align: center;
+                 color: #fff;}  
+
+         @media screen and (min-width:800px) {
+	    	.wrap1{height: 750px; }
+	    } 
+	                               
+	</style>
+	<script src="../../js/iconfont.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../css/sidebar.css">
+</head>
+<body>
+	<div class="sidrbar-1">
+   	   <ul>
+   	   	   <li class="draft-box">
+   	   	   	    <a href="../../list/draft/index.html"><svg class="icon" aria-hidden="true">
+					  <use xlink:href="#icon-caogaoxiang"></use>
+					</svg></a>
+   	   	   	    	<div class="draft">
+   	   	   	    		<h3>恭贺新年,贺喜新春 ~\(≧▽≦)/~</h3>
+   	   	   	    	</div>
+   	   	   	    
+   	   	   </li>
+   	   	   <li class="content-box">
+   	   	   	        <svg class="icon" aria-hidden="true">
+					  <use xlink:href="#icon-lianxi"></use>
+					</svg>
+   	   	   	    	<div class="content">
+   	   	   	    		<ul>
+   	   	   	    			<li class="wx">
+   	   	   	    				<img src="../../images/wx2.jpg">
+   	   	   	    				<div class="wx-pic">
+   	   	   	    					<img src="../../images/wx.png">
+   	   	   	    					<img src="images/wx.png">
+   	   	   	    				</div>
+   	   	   	    			</li>
+   	   	   	    			<li class="qq">
+   	   	   	    				<img src="../../images/qq2.jpg">
+   	   	   	    				<div class="qq-pic">
+   	   	   	    					<img src="../../images/qq.png">
+   	   	   	    				</div>
+   	   	   	    			</li>
+   	   	   	    		</ul>
+   	   	   	    	</div>
+   	   	   </li> 
+   	   </ul>
+    </div>
+
+    <a href="../../index.html"><div class="sidrbar-2">
+   	       <svg class="icon" aria-hidden="true">
+					  <use xlink:href="#icon-shouye1"></use>
+			</svg>
+    </div></a>
+    
+	<div class="container">
+      
+      <div class="component">
+        <!-- Start Nav Structure -->
+        <button class="cn-button" id="cn-button">+</button>
+        <div class="cn-wrapper" id="cn-wrapper">
+            <ul>
+              <li><a href="../food/index.html"><span class="icon-picture">Food</span></a></li>
+              <li><a href="../view/index.html"><span class="icon-headphones">View</span></a></li>
+              <li><a href="../vr/index.html"><span class="icon-home">VR</span></a></li>
+              <li><a href="../year/index.html"><span class="icon-facetime-video">year</span></a></li>
+              <li><a href="../more/index.html"><span class="icon-envelope-alt">more</span></a></li>
+              
+             </ul>
+        </div>
+        <div id="cn-overlay" class="cn-overlay"></div>
+        
+      </div>
+    </div><!-- /container -->
+    <script src="../../js/polyfills.js"></script>
+    <script src="../../js/demo1.js"></script>
+   <div class="wrap1">
+   	    
+   </div>
+   
+   <div class="wrap2 wrap2-1">
+   	    <div class="wrap-ct">
+   	    	<div class="wrap-tit">
+   	    		<h2>春节</h2>
+   	    		<div class="img-bg">
+   	    			<img src="imgs/200.png">
+   	    		</div>
+   	    	</div>
+   	    	<div class="wrap2-con">
+   	    		<div class="wrap2-con-l">
+   	    			<img src="imgs/11.png">
+   	    		</div>
+   	    		<div class="wrap2-con-r">
+   	    			<h2>团圆满月万千灯火!</h2>
+   	    			<p>春节是中华文化优秀传统的重要载体，蕴含着中华民族文化的智慧和结晶，凝聚着华夏人民的生命追求和情感寄托，传承着中国人的社会伦理观念</p>
+   	    			<p>我们一定要大力弘扬春节所凝结的优秀传统文化，突出辞旧迎新、祝福，团圆平安、兴旺发达等等的主题，努力营造家庭和睦、安定团结、欢乐祥和的喜庆氛围，推动中华文化历久弥新、不断发展壮大。</p>
+   	    		</div>
+   	    	</div>
+   	    </div>
+   </div>
+   <div class="wrap2 wrap2-2">
+   	    <div class="wrap-ct">
+   	    	<div class="wrap-tit">
+   	    		 <h2>贴春联</h2>
+   	    		 <div class="img-bg">
+   	    			<img src="imgs/200.png">
+   	    		</div>
+   	    	</div>
+   	    	<div class="wrap2-con">
+   	    		<div class="wrap2-con-l">
+   	    			<img src="imgs/12.png">
+   	    		</div>
+   	    		<div class="wrap2-con-r">
+   	    			<h2>欢天喜地迎新春，尊老爱幼促和谐!</h2>
+   	    			<p>春联也叫门对、春贴、对联、对子、桃符等等，它以工整、对偶、简洁、精巧的文字描绘时代背景，抒发美好愿望，是我国特有的文学形式。</p>
+   	    			<p>每逢春节，无论城市还是农村，家家户户都要精选一副大红春联贴于门上，为节日增加喜庆气氛。这一习俗起于宋代，在明代开始盛行，到了清代，春联的思想性和艺术性都有了很大的提高.</p>
+   	    		</div>
+   	    	</div>
+   	    </div>
+   </div>
+   <div class="wrap2  wrap2-3">
+   	    <div class="wrap-ct">
+   	    	<div class="wrap-tit">
+   	    		<h2>贴窗花</h2>
+   	    		<div class="img-bg">
+   	    			<img src="imgs/200.png">
+   	    		</div>
+   	    	</div>
+   	    	<div class="wrap2-con">
+   	    		<div class="wrap2-con-l">
+   	    			<img src="imgs/13.png">
+   	    		</div>
+   	    		<div class="wrap2-con-r">
+   	    			<h2>喜迎猪年! 欢度新年!</h2>
+   	    			<p>在中国民间人们还喜欢在窗户上贴上各种剪纸——窗花。窗花不仅烘托了喜庆的节日气氛，也集装饰性、欣赏性和实用性于一体。</p>
+   	    			<p>剪纸在我国是一种很普及的民间艺术，千百年来深受人们的喜爱，因它大多是贴在窗户上的，所以也被称其为“窗花”。窗花以其特有的概括和夸张手法将吉事祥物、美好愿望表现得淋漓尽致，将节日装点得红火富丽。窗花以其特有的概括和夸张手法将吉事祥物、美好愿望表现得淋漓尽致，将节日装点得红火富丽。</p>
+   	    		</div>
+   	    	</div>
+   	    </div>
+   </div>
+   <div class="wrap2 wrap2-4">
+   	    <div class="wrap-ct">
+   	    	<div class="wrap-tit">
+   	    		<h2>贴福字</h2>
+   	    		<div class="img-bg">
+   	    			<img src="imgs/200.png">
+   	    		</div>
+   	    	</div>
+   	    	<div class="wrap2-con">
+   	    		<div class="wrap2-con-l">
+   	    			<img src="imgs/14.png">
+   	    		</div>
+   	    		<div class="wrap2-con-r">
+   	    			<h2>张灯结彩迎新年，齐心协力谱新篇!</h2>
+   	    			<p>在贴春联的同时，一些人家要在屋门上、墙壁上、门楣上贴上大大小小的“福”字。春节贴“福”字，是我国民间由来已久的风俗。“福”字指福气、福运，寄托了人们对幸福生活的向往，对美好未来的祝愿。</p>
+   	    			<p>为了更充分地体现这种向往和祝愿，有的人干脆将“福”字倒过来贴，表示“幸福已到”“福气已倒（到）”。其实福字不能倒贴，大门是迎福纳福的地方，福字应该正贴。</p>
+   	    		</div>
+   	    	</div>
+   	    </div>
+   </div>
+   <div class="wrap4">
+   	    <div class="wrap4-ct">
+   	    	<div class="wrap4-list">
+   	    		   <div class="wrap4-list-l">
+   	    		   	   <img src="imgs/42.png">
+   	    		   </div>
+   	    		   <div class="wrap4-list-r">
+   	    		   	     <p>除夕这一天对华人来说是极为重要的。这一天人们准备除旧迎新，吃团圆饭。家庭是华人社会的基石，一年一度的团年饭充分表现出中华族家庭成员的互敬互爱，这种互敬互爱使一家人之间的关系更为紧密。家人的团聚往往令一家之主在精神上得到安慰与满足，</p>
+   	    		   	     <p>老人家眼看儿孙满堂，一家大小共叙天伦，过去的关怀与抚养子女所付出的心血总算没有白费，这是何等的幸福。而年轻一辈，也正可以借此机会向父母的养育之恩表达感激之情。</p>
+   	    		   </div>
+   	    	</div>
+
+   	    </div>
+   	    <div class="wrap4-ct">
+   	    	<div class="wrap4-list">
+   	    		   <div class="wrap4-list-l">
+   	    		   	   <img src="imgs/41.png">
+   	    		   </div>
+   	    		   <div class="wrap4-list-r">
+   	    		   		<p>吃年夜饭，是春节家家户户最热闹愉快的时候。大年夜．丰盛的年菜摆满一桌，阖家团聚，围坐桌旁，共吃团圆饭桌上有大菜、冷盆、热炒、点心，一般少不了两样东西，一是火锅，一是鱼。火锅沸煮，热气腾腾，温馨撩人，</p>
+   	    		   		<p>说明红红火火；"鱼"和"余"谐音，是象征"吉庆有余"，也喻示"年年有余"。还有萝卜俗称菜头，祝愿有好彩头；龙虾、爆鱼等煎炸食物，预祝家运兴旺如"烈火烹油"。</p>
+   	    		   </div>
+   	    	</div>
+   	    	
+   	    </div>
+   </div>
+   <div class="wrap3">
+   	    <div class="wrap3-ct">
+   	    	<div class="wrap-tit">
+   	    		<h2>腹有诗书</h2>
+   	    	</div>
+   	    	<div class="wrap3-list">
+   	    		<div class="wrap3-l">
+   	    		      <img src="imgs/24.png">
+   	    	    </div>
+   	    	    <div class="wrap3-l">
+   	    		      <h3>元日</h3>
+   	    		      <span>——王安石</span>
+   	    		      <p>爆竹声中一岁除，</p>
+						<p>春风送暖入屠苏。</p>
+						<p>千门万户曈曈日，</p>
+						<p>总把新桃换旧符。</p>
+   	    	    </div>
+   	    	</div>
+   	    	<div class="wrap3-list">
+   	    		<div class="wrap3-l">
+   	    		      <img src="imgs/22.jpg">
+   	    	    </div>
+   	    	    <div class="wrap3-l">
+   	    		      <h3>守岁</h3>
+   	    		      <span>——苏轼</span>
+   	    		      <p>欲知垂尽岁，有似赴壑蛇。</p>
+						<p>修鳞半已没，去意谁能遮。</p>
+						<p>况欲系其尾，虽勤知奈何。</p>
+						<p>儿童强不睡，相守夜欢哗。</p>
+						<p>晨鸡且勿唱，更鼓畏添挝。</p>
+						<p>坐久灯烬落，起看北斗斜。</p>
+						<p>明 年岂无年，心事恐蹉跎。</p>
+						<p>努力尽今夕，少年犹可夸。</p>
+   	    	    </div>
+   	    	</div>
+   	    	<div class="wrap3-list">
+   	    		<div class="wrap3-l">
+   	    		      <img src="imgs/23.png">
+   	    	    </div>
+   	    	    <div class="wrap3-l">
+   	    		      <h3>除夜作</h3>
+   	    		      <span>——高适</span>
+   	    		      <p>旅馆寒灯独不眠，</p>
+						<p>客心何事转凄然?</p>
+						<p>故乡今夜思千里，</p>
+						<p>霜鬓明朝又一年。</p>
+   	    	    </div>
+   	    	</div>
+   	    	<div class="wrap3-list">
+   	    		<div class="wrap3-l">
+   	    		      <img src="imgs/21.jpg">
+   	    	    </div>
+   	    	    <div class="wrap3-l">
+   	    		      <h3>除夜</h3>
+   	    		      <span>——文天祥</span>
+   	    		      <p>乾坤空落落，岁月去堂堂;</p>
+						 <p>末路惊风雨，穷边饱雪霜。</p>
+						 <p>命随年欲尽，身与世俱忘;</p>
+						 <p>无复屠苏梦，挑灯夜未央。</p>
+   	    	    </div>
+   	    	</div>
+   	    </div>
+   </div>
+   
+   <div class="footer">
+   	     <h2>最令人怀念的时光</h2>
+   </div>
+
+
+
+
+
+
+<canvas id="canvas">
+	
+</canvas>
+
+
+<script>
+function initVars(){
+
+	pi=Math.PI;
+	ctx=canvas.getContext("2d");
+	canvas.width=canvas.clientWidth;
+	canvas.height=canvas.clientHeight;
+	cx=canvas.width/2;
+	cy=canvas.height/2;
+	playerZ=-25;
+	playerX=playerY=playerVX=playerVY=playerVZ=pitch=yaw=pitchV=yawV=0;
+	scale=600;
+	seedTimer=0;seedInterval=5,seedLife=100;gravity=.02;
+	seeds=new Array();
+	sparkPics=new Array();
+	s="https://cantelope.org/NYE/";
+	for(i=1;i<=10;++i){
+		sparkPic=new Image();
+		sparkPic.src=s+"spark"+i+".png";
+		sparkPics.push(sparkPic);
+	}
+	sparks=new Array();
+	pow1=new Audio(s+"pow1.ogg");
+	pow2=new Audio(s+"pow2.ogg");
+	pow3=new Audio(s+"pow3.ogg");
+	pow4=new Audio(s+"pow4.ogg");
+	frames = 0;
+}
+
+function rasterizePoint(x,y,z){
+
+	var p,d;
+	x-=playerX;
+	y-=playerY;
+	z-=playerZ;
+	p=Math.atan2(x,z);
+	d=Math.sqrt(x*x+z*z);
+	x=Math.sin(p-yaw)*d;
+	z=Math.cos(p-yaw)*d;
+	p=Math.atan2(y,z);
+	d=Math.sqrt(y*y+z*z);
+	y=Math.sin(p-pitch)*d;
+	z=Math.cos(p-pitch)*d;
+	var rx1=-1000,ry1=1,rx2=1000,ry2=1,rx3=0,ry3=0,rx4=x,ry4=z,uc=(ry4-ry3)*(rx2-rx1)-(rx4-rx3)*(ry2-ry1);
+	if(!uc) return {x:0,y:0,d:-1};
+	var ua=((rx4-rx3)*(ry1-ry3)-(ry4-ry3)*(rx1-rx3))/uc;
+	var ub=((rx2-rx1)*(ry1-ry3)-(ry2-ry1)*(rx1-rx3))/uc;
+	if(!z)z=.000000001;
+	if(ua>0&&ua<1&&ub>0&&ub<1){
+		return {
+			x:cx+(rx1+ua*(rx2-rx1))*scale,
+			y:cy+y/z*scale,
+			d:Math.sqrt(x*x+y*y+z*z)
+		};
+	}else{
+		return {
+			x:cx+(rx1+ua*(rx2-rx1))*scale,
+			y:cy+y/z*scale,
+			d:-1
+		};
+	}
+}
+
+function spawnSeed(){
+	
+	seed=new Object();
+	seed.x=-50+Math.random()*100;
+	seed.y=25;
+	seed.z=-50+Math.random()*100;
+	seed.vx=.1-Math.random()*.2;
+	seed.vy=-1.5;//*(1+Math.random()/2);
+	seed.vz=.1-Math.random()*.2;
+	seed.born=frames;
+	seeds.push(seed);
+}
+
+function splode(x,y,z){
+	
+	t=5+parseInt(Math.random()*150);
+	sparkV=1+Math.random()*2.5;
+	type=parseInt(Math.random()*3);
+	switch(type){
+		case 0:
+			pic1=parseInt(Math.random()*10);
+			break;
+		case 1:
+			pic1=parseInt(Math.random()*10);
+			do{ pic2=parseInt(Math.random()*10); }while(pic2==pic1);
+			break;
+		case 2:
+			pic1=parseInt(Math.random()*10);
+			do{ pic2=parseInt(Math.random()*10); }while(pic2==pic1);
+			do{ pic3=parseInt(Math.random()*10); }while(pic3==pic1 || pic3==pic2);
+			break;
+	}
+	for(m=1;m<t;++m){
+		spark=new Object();
+		spark.x=x; spark.y=y; spark.z=z;
+		p1=pi*2*Math.random();
+		p2=pi*Math.random();
+		v=sparkV*(1+Math.random()/6)
+		spark.vx=Math.sin(p1)*Math.sin(p2)*v;
+		spark.vz=Math.cos(p1)*Math.sin(p2)*v;
+		spark.vy=Math.cos(p2)*v;
+		switch(type){
+			case 0: spark.img=sparkPics[pic1]; break;
+			case 1:
+				spark.img=sparkPics[parseInt(Math.random()*2)?pic1:pic2];
+				break;
+			case 2:
+				switch(parseInt(Math.random()*3)){
+					case 0: spark.img=sparkPics[pic1]; break;
+					case 1: spark.img=sparkPics[pic2]; break;
+					case 2: spark.img=sparkPics[pic3]; break;
+				}
+				break;
+		}
+		spark.radius=25+Math.random()*50;
+		spark.alpha=1;
+		spark.trail=new Array();
+		sparks.push(spark);
+	}
+	switch(parseInt(Math.random()*4)){
+		case 0:	pow=new Audio(s+"pow1.ogg"); break;
+		case 1:	pow=new Audio(s+"pow2.ogg"); break;
+		case 2:	pow=new Audio(s+"pow3.ogg"); break;
+		case 3:	pow=new Audio(s+"pow4.ogg"); break;
+	}
+	d=Math.sqrt((x-playerX)*(x-playerX)+(y-playerY)*(y-playerY)+(z-playerZ)*(z-playerZ));
+	pow.volume=1.5/(1+d/10);
+	pow.play();
+}
+
+function doLogic(){
+	
+	if(seedTimer<frames){
+		seedTimer=frames+seedInterval*Math.random()*10;
+		spawnSeed();
+	}
+	for(i=0;i<seeds.length;++i){
+		seeds[i].vy+=gravity;
+		seeds[i].x+=seeds[i].vx;
+		seeds[i].y+=seeds[i].vy;
+		seeds[i].z+=seeds[i].vz;
+		if(frames-seeds[i].born>seedLife){
+			splode(seeds[i].x,seeds[i].y,seeds[i].z);
+			seeds.splice(i,1);
+		}
+	}
+	for(i=0;i<sparks.length;++i){
+		if(sparks[i].alpha>0 && sparks[i].radius>5){
+			sparks[i].alpha-=.01;
+			sparks[i].radius/=1.02;
+			sparks[i].vy+=gravity;
+			point=new Object();
+			point.x=sparks[i].x;
+			point.y=sparks[i].y;
+			point.z=sparks[i].z;
+			if(sparks[i].trail.length){
+				x=sparks[i].trail[sparks[i].trail.length-1].x;
+				y=sparks[i].trail[sparks[i].trail.length-1].y;
+				z=sparks[i].trail[sparks[i].trail.length-1].z;
+				d=((point.x-x)*(point.x-x)+(point.y-y)*(point.y-y)+(point.z-z)*(point.z-z));
+				if(d>9){
+					sparks[i].trail.push(point);
+				}
+			}else{
+				sparks[i].trail.push(point);
+			}
+			if(sparks[i].trail.length>5)sparks[i].trail.splice(0,1);				
+			sparks[i].x+=sparks[i].vx;
+			sparks[i].y+=sparks[i].vy;
+			sparks[i].z+=sparks[i].vz;
+			sparks[i].vx/=1.075;
+			sparks[i].vy/=1.075;
+			sparks[i].vz/=1.075;
+		}else{
+			sparks.splice(i,1);
+		}
+	}
+	p=Math.atan2(playerX,playerZ);
+	d=Math.sqrt(playerX*playerX+playerZ*playerZ);
+	d+=Math.sin(frames/80)/1.25;
+	t=Math.sin(frames/200)/40;
+	playerX=Math.sin(p+t)*d;
+	playerZ=Math.cos(p+t)*d;
+	yaw=pi+p+t;
+}
+
+function rgb(col){
+	
+	var r = parseInt((.5+Math.sin(col)*.5)*16);
+	var g = parseInt((.5+Math.cos(col)*.5)*16);
+	var b = parseInt((.5-Math.sin(col)*.5)*16);
+	return "#"+r.toString(16)+g.toString(16)+b.toString(16);
+}
+
+function draw(){
+	
+	ctx.clearRect(0,0,cx*2,cy*2);
+	
+	ctx.fillStyle="#ff8";
+	for(i=-100;i<100;i+=3){
+		for(j=-100;j<100;j+=4){
+			x=i;z=j;y=25;
+			point=rasterizePoint(x,y,z);
+			if(point.d!=-1){
+				size=250/(1+point.d);
+				d = Math.sqrt(x * x + z * z);
+				a = 0.75 - Math.pow(d / 100, 6) * 0.75;
+				if(a>0){
+					ctx.globalAlpha = a;
+					ctx.fillRect(point.x-size/2,point.y-size/2,size,size);				
+				}
+			}
+		}
+	}
+	ctx.globalAlpha=1;
+	for(i=0;i<seeds.length;++i){
+		point=rasterizePoint(seeds[i].x,seeds[i].y,seeds[i].z);
+		if(point.d!=-1){
+			size=200/(1+point.d);
+			ctx.fillRect(point.x-size/2,point.y-size/2,size,size);
+		}
+	}
+	point1=new Object();
+	for(i=0;i<sparks.length;++i){
+		point=rasterizePoint(sparks[i].x,sparks[i].y,sparks[i].z);
+		if(point.d!=-1){
+			size=sparks[i].radius*200/(1+point.d);
+			if(sparks[i].alpha<0)sparks[i].alpha=0;
+			if(sparks[i].trail.length){
+				point1.x=point.x;
+				point1.y=point.y;
+				switch(sparks[i].img){
+					case sparkPics[0]:ctx.strokeStyle="#f84";break;
+					case sparkPics[1]:ctx.strokeStyle="#84f";break;
+					case sparkPics[2]:ctx.strokeStyle="#8ff";break;
+					case sparkPics[3]:ctx.strokeStyle="#fff";break;
+					case sparkPics[4]:ctx.strokeStyle="#4f8";break;
+					case sparkPics[5]:ctx.strokeStyle="#f44";break;
+					case sparkPics[6]:ctx.strokeStyle="#f84";break;
+					case sparkPics[7]:ctx.strokeStyle="#84f";break;
+					case sparkPics[8]:ctx.strokeStyle="#fff";break;
+					case sparkPics[9]:ctx.strokeStyle="#44f";break;
+				}
+				for(j=sparks[i].trail.length-1;j>=0;--j){
+					point2=rasterizePoint(sparks[i].trail[j].x,sparks[i].trail[j].y,sparks[i].trail[j].z);
+					if(point2.d!=-1){
+						ctx.globalAlpha=j/sparks[i].trail.length*sparks[i].alpha/2;
+						ctx.beginPath();
+						ctx.moveTo(point1.x,point1.y);
+						ctx.lineWidth=1+sparks[i].radius*10/(sparks[i].trail.length-j)/(1+point2.d);
+						ctx.lineTo(point2.x,point2.y);
+						ctx.stroke();
+						point1.x=point2.x;
+						point1.y=point2.y;
+					}
+				}
+			}
+			ctx.globalAlpha=sparks[i].alpha;
+			ctx.drawImage(sparks[i].img,point.x-size/2,point.y-size/2,size,size);
+		}
+	}
+}
+
+function frame(){
+
+	if(frames>100000){
+		seedTimer=0;
+		frames=0;
+	}
+	frames++;
+	draw();
+	doLogic();
+	requestAnimationFrame(frame);
+}
+
+window.addEventListener("resize",()=>{
+	canvas.width=canvas.clientWidth;
+	canvas.height=canvas.clientHeight;
+	cx=canvas.width/2;
+	cy=canvas.height/2;
+});
+
+initVars();
+frame();
+</script>
+</body>
+</html>

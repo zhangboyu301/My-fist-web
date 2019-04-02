@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>美食列表</title>
+  <link rel="shortcut icon" href="../../images/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="../../css/component1.css" />
+   <script src="../../js/modernizr-2.6.2.min.js"></script>
+	<style type="text/css">
+	   *{padding: 0;
+	     margin: 0;
+	     list-style: none;
+	    }
+ 
+    /********wrap1******/
+		.wrap1{width: 100%;
+		       height: 520px;
+		       overflow: hidden;	
+		        background-image: url(bg/bg1.jpg) ;
+		        background-size: 100% 100%;
+            border-bottom: 10px solid #F75C2F;
+            border-top: 5px solid #F75C2F;
+
+		      }
+		    
+		.wrap1, .wrap4{min-width: 1170px;}
+		.wrap1-ct{width: 900px;
+		          height: 400px;
+		          margin: 60px auto;
+		          text-align: center;
+		          overflow: hidden;
+		          color: #fff;
+		        }  
+		.wrap1-tit {width: 400px;
+					height: 100px;
+					border:1px solid  #F75C2F;
+					margin: 50px auto;
+					color: #F7C242;
+				   }        
+		.wrap1-ct h1{line-height: 100px;}  
+		.wrap1-ct p{line-height: 50px;} 
+		.wrap1-ct h5{line-height: 50px;
+					color: #FBE251;
+				    } 
+	/********wrap2************/			
+	    .wrap2{width:1170px;
+	            height: 300px;
+	           margin: 100px auto;
+	           background-image: url(bg/bg.jpg);
+	           background-attachment: fixed;
+	       } 
+	   .wrap2 h3{text-align: center;
+	             line-height: 300px;
+	             font-size:26px;
+	             color: #fff;
+	            }  
+
+    /*******wrap3*************/
+        .wrap3{width: 100%;
+               height: 900px;
+               list-style: none;
+              }
+        .wrap3-ct {width: 1170px;
+                   height: 900px;
+                   margin: 0 auto;
+                  } 
+        .wrap3-tit {width: 100%;
+                    height: 110px;
+                    margin-bottom: 50px;
+                } 
+        .wrap3-tit h2{text-align: center;
+                       line-height: 100px;
+                       font-size: 36px;
+                       color: #F75C2F;
+                       display: block;
+                       border: 1px solid #F75C2F; 
+                       width: 400px;
+                       height: 100px;
+                       margin: 0 auto
+                       }
+
+        .wrap3-pic  {width: 100%;
+                     height: 700px;
+                     background: blue;
+                     }
+        .wrap3-pic ul li{width: 292.5px;
+                         height: 350px;
+                         background:red; 
+                         float: left;
+                         position: relative;
+                         overflow: hidden;
+                         
+                         } 
+        .wrap3-pic ul li img{width: 100%;   
+                             height: 100%；
+                             } 
+        .wrap3-pic-cover {width: 100%;   
+                          height:100%;
+                          background:#000;
+                          position:absolute;
+                          top: 50%;
+                          left: 50%;
+                          transform: scale(0);
+                          transition: .3s;
+                          border-radius: 50%;
+                          background-color: rgb(0,0,0, .8);
+                          }  
+        .wrap3-pic-cover p{color: #fff;
+                           text-align: center;
+                            line-height: 350px;
+                            font-size: 16px;
+                            position: absolute;
+                         
+                            right: 0;
+                            left: 0;
+
+                           } 
+
+       .wrap3-pic ul li:hover .wrap3-pic-cover{transform: scale(1.5);
+         										border-radius: 50%;
+         									   top: 0%;
+                                                left: 0%;}
+
+
+  /***********wrap5****************/
+
+    .wrap5{width: 100%;
+           }
+    .wrap5-tit{width: 100%;
+              height: 100px;
+              }                
+    .wrap5-ct{width: 1170px;
+             height: 1100px;
+            margin: 100px auto;} 
+    .wrap5-1 {width:390px;
+              height: 500px;
+               background: yellow;
+               float: left; 
+               overflow: hidden;}       
+    .wrap5-1 img{width: 100%;
+                 height: 100%;
+                transition: .3s;}   
+    .wrap5-1 img:hover{transform: scale(1.6);}                    
+    /*********wrap4***************/                              
+        .wrap4{width: 100%;
+               height:300px;
+               background: #F75C2F;
+               color:#fff;
+               text-align: center;
+               margin-top: 100px;
+              }    
+          .wrap4 h2{line-height: 180px;
+                    font-size: 36px;}  
+          .wrap4 p{line-height:  100px;}                            
+	</style>
+  <script src="../../js/iconfont.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../css/sidebar.css">
+
+</head>
+<body>
+  <div class="sidrbar-1">
+       <ul>
+           <li class="draft-box">
+                <a href="../../list/draft/index.html"><svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-caogaoxiang"></use>
+          </svg></a>
+                  <div class="draft">
+                    <h3>有些是我拍的~   ╰(￣▽￣)╭</h3>
+                  </div>
+                
+           </li>
+           <li class="content-box">
+                    <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-lianxi"></use>
+          </svg>
+                  <div class="content">
+                    <ul>
+                      <li class="wx">
+                        <img src="../../images/wx2.jpg">
+                        <div class="wx-pic">
+                          <img src="../../images/wx.png">
+                          <img src="images/wx.png">
+                        </div>
+                      </li>
+                      <li class="qq">
+                        <img src="../../images/qq2.jpg">
+                        <div class="qq-pic">
+                          <img src="../../images/qq.png">
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+           </li> 
+       </ul>
+    </div>
+
+    <a href="../../index.html"><div class="sidrbar-2">
+           <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-shouye1"></use>
+      </svg>
+    </div></a>
+  <div class="container">
+      
+      <div class="component">
+        <!-- Start Nav Structure -->
+        <button class="cn-button" id="cn-button">+</button>
+        <div class="cn-wrapper" id="cn-wrapper">
+            <ul>
+              <li><a href="../food/index.html"><span class="icon-picture">Food</span></a></li>
+              <li><a href="../view/index.html"><span class="icon-headphones">View</span></a></li>
+              <li><a href="../vr/index.html"><span class="icon-home">VR</span></a></li>
+              <li><a href="../year/index.html"><span class="icon-facetime-video">year</span></a></li>
+              <li><a href="../more/index.html"><span class="icon-envelope-alt">more</span></a></li>
+              
+             </ul>
+        </div>
+        <div id="cn-overlay" class="cn-overlay"></div>
+        
+      </div>
+    </div><!-- /container -->
+    <script src="../../js/polyfills.js"></script>
+    <script src="../../js/demo1.js"></script>
+  <div class="wrap1">
+  	  <div class="wrap1-s">
+  	   <div class="wrap1-ct">
+
+  	   	    <div class="wrap1-tit">
+  	   	    <h1>TESTIMONIALS</h1>
+  	   	    </div>
+  	   	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+			sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam sed do eiusmod.
+
+			</p>
+  	   	    <h5>Daniel Nyari,</h5>
+  	   </div>
+	</div>
+  </div>
+  <div class="wrap2">
+  	    <h3>That is 
+  	    what i like!</h3>  
+  </div>
+  <div class="wrap5">
+      <div class="wrap5-ct">
+           <div class="wrap3-tit"> 
+                <h2>
+                    粗粮王-高新店
+                </h2>
+            </div>
+           <div class="wrap5-1">
+              <img src="g/g11.jpg">  
+           </div>
+           <div class="wrap5-1">
+              <img src="g/g12.jpg">    
+           </div>
+           <div class="wrap5-1">
+              <img src="g/g13.jpg">    
+           </div>
+           <div class="wrap5-1">
+              <img src="g/g14.jpg">    
+           </div>
+           <div class="wrap5-1">
+              <img src="g/g15.jpg">    
+           </div>
+           <div class="wrap5-1">
+              <img src="g/g16.jpg">    
+           </div>
+      </div>
+  </div>
+  <div class="wrap3">
+  	   <div class="wrap3-ct">
+  	   	    <div class="wrap3-tit"> 
+  	   	    	  <h2>
+  	   	    	  	  WHAT TO EAT
+  	   	    	  </h2>
+  	   	    </div>
+  	   	    <div class="wrap3-pic">
+  	   	    	<ul>
+  	   	    		<li>
+  	   	    			 <img src="g/g1.jpg">
+  	   	    			 
+  	   	    			 <div class="wrap3-pic-cover"> 	  
+  	   	    			     <p>西红柿炒饭</p> 	    			 	  
+ 	   	    			 </div>
+  	   	    		</li>
+  	   	    		<li>
+  	   	    			 <img src="g/g2.jpg">
+  	   	    			 <div class="wrap3-pic-cover"> 	  
+  	   	    			     <p>蛋卷</p> 	    			 	  
+ 	   	    			 </div>
+
+  	   	    		</li>
+  	   	    		<li>
+  	   	    			 <img src="g/g3.jpg">
+  	   	    			 <div class="wrap3-pic-cover"> 	  
+  	   	    			     <p>卷饼</p> 	    			 	  
+ 	   	    			 </div>
+  	   	    		</li>
+  	   	    		<li>
+  	   	    			 <img src="g/g4.jpg">
+  	   	    			 <div class="wrap3-pic-cover"> 	  
+  	   	    			     <p>卷火腿</p> 	    			 	  
+ 	   	    			 </div>
+  	   	    		</li>
+  	   	    		<li>
+  	   	    			 <img src="g/g5.jpg">
+  	   	    			 <div class="wrap3-pic-cover"> 	  
+  	   	    			     <p>菜夹馍</p> 	    			 	  
+ 	   	    			 </div>
+  	   	    		</li>
+  	   	    		<li>
+  	   	    			 <img src="g/g6.jpg">
+  	   	    			 <div class="wrap3-pic-cover"> 	  
+  	   	    			     <p>鸡肉夹馍</p> 	    			 	  
+ 	   	    			 </div>
+  	   	    		</li>
+  	   	    		<li>
+  	   	    			 <img src="g/g7.jpg">
+  	   	    			 <div class="wrap3-pic-cover"> 	  
+  	   	    			     <p>小吃</p> 	    			 	  
+ 	   	    			 </div>
+  	   	    		</li>
+  	   	    		<li>
+  	   	    			 <img src="g/g8.jpg">
+  	   	    			 <div class="wrap3-pic-cover"> 	  
+  	   	    			     <p>沙拉</p> 	    			 	  
+ 	   	    			 </div>
+  	   	    		</li>
+  	   	    	</ul>
+  	   	    </div>
+
+  	   </div>
+  </div>
+  
+  <div class="wrap4">
+  	   <h2>Delicious food!</h2>
+  	   <p>Code & picture by zhnagboyu</p>
+  </div>
+
+</body>
+</html>

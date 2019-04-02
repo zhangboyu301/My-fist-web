@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link rel="shortcut icon" href="../../images/favicon.ico"/>
+  
+  <link rel="stylesheet" type="text/css" href="icon/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="icon/iconfont2.css">
+  <link rel="stylesheet" type="text/css" href="icon/iconfont3.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+
+  <link rel="stylesheet" type="text/css" href="../../css/component1.css" />
+  <script src="../../js/modernizr-2.6.2.min.js"></script>
+  
+  <title>看风景</title>
+
+
+  <style type="text/css">
+     *{padding: 0;
+       margin: 0;
+       text-decoration: none;
+       list-style: none;
+       scroll-behavior: smooth;
+
+       }
+
+
+       html, body{height: 100%;
+                  width: 100%;}        
+       	.wrap1, .wrap2, .wrap3, .footer{ width:100%;
+		      							}	
+		.wrap1-ct, .wrap2-ct, .wrap3-ct, .footer-ct, .topbar-ct
+		         {width: 1200px;
+		          height: auto;
+		          margin: 0 auto;
+		          color:#6A6262 ;
+		          overflow: hidden;
+		         } 
+             
+/********清除浮动**********/         
+		 .wrap1-ct:after,
+		 .wrap2-ct:after,
+		 .wrap3-ct:after,
+		 .footer-ct:after{content: "";
+  	                display: block;
+  	                clear: both;
+  	            }  
+  	    .wrap1-title,
+  	    .wrap2-title,
+  	    .wrap3-title
+  	                 {width: 100%;
+		              height: 100px;
+		             padding: 20px 0;
+		             text-shadow: 15px 15px 10px #B9B2B2;
+		             font-size: 26px;
+		             color: #232222;
+		         }
+		  .wrap1-title i,
+  	      .wrap2-title i,
+  	      .wrap3-title i{font-size: 35px;
+  	                    margin: 0 20px;}         
+		 .h2-all {width: 200px;
+		 	      height: 100px;
+		          text-align: center;
+		          margin:0 auto;
+  					} 
+/*********************************/		             
+
+              .sidebar{width: 50px;
+                       height: 50px;
+                      position: fixed;
+                      top: 40%;
+                      right: 50px;
+                      overflow: hidden;
+                      transition: .5s;
+                      z-index: 3;
+
+						}
+				.wrap-bar ul{width: 50px;
+				            height: 200px;
+				            overflow: hidden;
+				            background: #454242;
+				           }
+
+              .wrap-bar ul li,
+              .wrap-bar-con{ width: 50px;
+                               height: 50px;
+                               line-height: 50px;
+                               text-align: center;
+                               } 
+               
+              .wrap-bar-con i{
+              				font-size: 28px;
+              			   } 
+              .wrap-bar-con a{color: #fff;}			   
+              .wrap-bar ul li i{color: #fff;
+                                font-size: 28px;}
+              .wrap-bar ul li:hover{background: #000;
+                                  }			                
+              .wrap-bar-con{width: 50px;
+                            height: 50px;
+                            border-radius: 50px;
+                            transition: .5s;
+                            animation:topbar-aim  3s infinite;
+                        }  
+             @-webkit-keyframes topbar-aim  {
+
+       									
+			0%   {background:#000;
+				  color: #fff;
+			      }
+			
+            50%   {background:yellow;}  
+
+             100%   {background:#000;
+             	     color: #fff;} 
+
+                    } 
+
+               .sidebar:hover{height:250px;
+                              transition-delay: .5s;} 
+               .sidebar:hover .wrap-bar-con{border-radius: 0px;
+                                            }   
+
+
+
+/************top1*************/       
+  	   .top1{width:100%;
+  	           height:100%;
+  	           min-width: 1220px;
+  	           background-size:100% 100%; 
+  	           background-image: url(img/topbar/bg.jpg);
+  	           min-height: 750px;
+  	           overflow: hidden;
+  	           font-family:微软雅黑;
+  	          
+  	       }
+
+  	   
+
+
+      
+         
+      .topbar{width:100%
+  	          height:auto;
+  	          background:#0B1013;
+  	          margin: 0 auto;
+  	          position: relative;
+  	          opacity: 0.65;
+              animation: change-color-1 15s;
+  			  animation-iteration-count: infinite;  	
+  				         }
+  	   .topbar-pic{width: 100%;
+  	   				height: 100%;
+  	   				position: absolute;
+  	   				top: 0;
+  	   				left: 0;
+  	   				z-index: -1;
+  	   				
+  	   }
+
+  	   .topbar:after{content: "";
+  	                display: block;
+  	                clear: both;
+  	            }
+  	                 
+  	   .top1-l{
+  	           float: left;
+  	          }
+        .top1-l i{
+  	           font-size: 25px;
+  	          }
+  	     .top1-l span{line-height: 50px;
+  	                  height: 40px;
+  	                  display: block;
+  	                  color: #fff;
+  	                  font-size: 18px;
+  	                  }      
+  	    .top1-r{
+  	          height: 50px;
+  	           float: right; 
+  	           }
+  	    .top1-l i{margin: 0 20px; }                   
+  	   .top1-r ul li{width: 80px;
+  	                 height: 50px;
+  	                 float:left;
+  	                 line-height: 50px;
+  	                 text-align: center;
+  	                 padding-right: 10px;
+  	                color: #fff;
+  	                transition: .3s;
+  	                 }
+  	    .top1-r ul li:hover{background: #716D6D; 
+  	                        }                                 
+  	   .top1-con {width: 100%;
+  	             height: 200px;
+  	             float: left;
+  	             margin: 30% auto;
+  	             color: #fff;
+  	             text-align: center;
+                 font-family: "Microsoft Yahei";
+  	             } 
+  	    .top1-r i{margin: 0 10px; }  
+
+  	   .top1-con h1{line-height: 120px;
+  	                font-size:30px;}  
+  	    .top1-con p{line-height: 30px;}  
+  	    
+
+/*********wrap1***********/
+		
+		              
+		.wrap1-pic ul li{width: 360px;
+		                height: 420px;
+		               
+		                float:left;
+		                margin:15px 20px;
+		                position: relative;
+		                overflow:hidden;
+		                background-size: 100%;
+						       transition:.2s;
+
+		               }
+
+		 .wrap1-pic ul li:hover{background-size: 105%;
+		 	                      }					             
+		 .wrap1-pic ul li:hover .wrap1-pic-cover{
+		 	              opacity: .8;
+		                  transition-delay: .3s;
+
+		                  }               
+		.wrap1-pic ul li:hover .wrap1-pic-cover a{transform: rotate(360deg);}
+		 .wrap1-pic-cover{width: 100%;
+		                  height: 100%;
+		                  background: #000;
+		                  transition: .7s;
+		                  opacity: 0;
+		                  text-align:center;
+		                }  
+		 .wrap1-pic-cover a{display: block;
+		                  width: auto;
+		                  transition: .6s;
+		                  transition-delay: .3;
+		              }               
+		 .wrap1-pic-cover i{font-size: 150px;
+		                    line-height: 420px;
+		                    color: #fff;
+		                    }                
+/*******wrap2***********/	
+         
+         .wrap2-pic{width: 100%;
+                    height: 640px;
+                 }
+         .wrap2-pic-1{   width: 600px;
+                         height: 320px;
+                         box-shadow: 0 0 1px #000;
+                         float: left;
+                         position: relative;
+                         overflow: hidden;
+                         } 
+          .wrap2-pic-1 img{width: 100%;
+                          height: 100%;
+                      transition: .4s;}
+
+         .wrap2-pic-cover{width: 100px;
+                           height: 320px;
+                           position: absolute;
+                           top: 0;
+                           left:-100px;
+                           transition: .4s;
+                           z-index: 3;
+                       } 
+        	.wrap2-pic ul li:hover .wrap2-pic-cover{margin-left: 100px;}               	
+       		 .wrap2-pic ul li:hover .wrap2-pic-1 img{margin-left: 100px;}
+     		.wrap2-pic-cover ul li{width: 100px;
+     		 						height:106px;
+     		 					    padding: 15px 0;
+     		 					    background: #000;}
+     		.wrap2-pic-cover ul a{color: #fff;
+     		                      
+     		                      text-align: center;} 	
+     		.wrap2-pic-cover ul i{font-size: 30px;}   
+
+/**********.wrap3*************/                         
+         .wrap3-l, .wrap3-r{width: 600px;
+          					height: 400px;
+          				    float: left;
+          				    box-shadow: 0 0 1px #000;
+          				    } 
+    	  .wrap3-l{background-image:url(img/10-1.jpeg);
+    	  		  background-size: 200% 100%; 
+    	  		  animation: change-bg 5s;
+  	             animation-iteration-count: infinite;
+
+  	            }
+  	      .wrap3-r{
+  	               width: 600px;
+  	               padding:  0 40px;
+  	               background: #434242;
+  	               color: #fff;}      
+
+       		@-webkit-keyframes change-bg{								
+			0%   {background-position: 0px;}
+			
+			50%  {background-position: -600px;;
+			      
+			      }
+            100%   {background-position: 0px;} 
+                  
+                   }  
+            .wrap3-r  h2{line-height: 50px;
+            				height: 50px;
+            	         font-size: 2.3rem;
+            	         margin:30px 0;
+                         }
+            .wrap3-r  h3{line-height: 40px;
+                         height: 40px;
+                         float: right;
+                       } 
+            .wrap3-r  p{line-height: 40px;
+            			text-indent: 5rem;
+            	        float: left;
+                       }            	
+/*********footer*************/
+		.footer{height:250px;
+		        background: #0B1013; 
+		        margin-top: 100px;
+		    	min-width: 1220px;
+		}	
+        .footer-ct{width: 1200px;
+        		   padding: 25px 0; }
+        .footer-l,  .footer-r {width: 600px;
+        	      height:200px;
+                  float: left;
+                  color: #fff;
+                 }
+         .footer-l ul li{font-size: 30px;
+                         line-height: 200px;
+                         margin: 0 0 0 120px}        
+         .footer-ct i{font-size: 40px;} 
+         .footer-r ul{margin: 0 0 0 250px;}  
+        .footer-r ul li{width: 200px ;
+        				height: 200px;
+        				float: left;
+        				line-height: 200px;
+                         }        
+        			}    
+              
+  </style>
+  <script src="../../js/iconfont.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../css/sidebar.css">
+ </head>
+ <body>
+  <div class="sidrbar-1">
+       <ul>
+           <li class="draft-box">
+                <a href="../../list/draft/index.html"><svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-caogaoxiang"></use>
+          </svg></a>
+                  <div class="draft">
+                    <h3>底部中间还有个扇形导航，更便捷(　ﾟ∀ﾟ) ﾉ♡</h3>
+                  </div>
+                
+           </li>
+           <li class="content-box">
+                    <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-lianxi"></use>
+          </svg>
+                  <div class="content">
+                    <ul>
+                      <li class="wx">
+                        <img src="../../images/wx2.jpg">
+                        <div class="wx-pic">
+                          <img src="../../images/wx.png">
+                          <img src="images/wx.png">
+                        </div>
+                      </li>
+                      <li class="qq">
+                        <img src="../../images/qq2.jpg">
+                        <div class="qq-pic">
+                          <img src="../../images/qq.png">
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+           </li> 
+       </ul>
+    </div>
+
+    <a href="../../index.html"><div class="sidrbar-2">
+           <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-shouye1"></use>
+      </svg>
+    </div></a>
+  <div class="container">
+      
+      <div class="component">
+        <!-- Start Nav Structure -->
+        <button class="cn-button" id="cn-button">+</button>
+        <div class="cn-wrapper" id="cn-wrapper">
+            <ul>
+              <li><a href="../food/index.html"><span class="icon-picture">Food</span></a></li>
+              <li><a href="../view/index.html"><span class="icon-headphones">View</span></a></li>
+              <li><a href="../vr/index.html"><span class="icon-home">VR</span></a></li>
+              <li><a href="../year/index.html"><span class="icon-facetime-video">year</span></a></li>
+              <li><a href="../more/index.html"><span class="icon-envelope-alt">more</span></a></li>
+              
+             </ul>
+        </div>
+        <div id="cn-overlay" class="cn-overlay"></div>
+        
+      </div>
+    </div><!-- /container -->
+    <script src="../../js/polyfills.js"></script>
+    <script src="../../js/demo1.js"></script>
+
+ 	<div class="sidebar wow rollIn">
+ 		<div class="wrap-bar-con ">
+ 			<a href="#" ><li><i class="iconfont icon-chakan"></i></li></a>
+ 		</div>
+ 		<div class="wrap-bar ">
+ 			<ul>
+ 				          <a href="#" ><li><i class="iconfont icon-shouye"></i></li></a>
+ 		  	   	  	  <a href="#wrap1"><li><i class="iconfont icon-yishu"></i></li></a>
+ 		  	   	  	  <a href="#wrap2"><li><i style="font-size: 35px;" class="iconfont icon-shantang"></i></li></a>
+ 		  	   	  	  <a href="#wrap3"><li><i class="iconfont icon-haitan"></i></li></a>
+ 		  	   	  
+ 			</ul>
+ 		</div>
+ 		
+ 	</div>
+ 	<div class="top1">
+ 		  <div class="topbar ">
+ 		  	 <div class="topbar-ct wow bounceInDown">
+ 		  	   <div class="top1-l"> 
+ 		  	   		<span>Design by zhangboyu<i class="iconfont icon-sheji"></i></span>
+ 		  	   </div> 
+ 		  	   <div class="top1-r">
+ 		  	   	  <ul>
+ 		  	   	  	  <a href="#" ><li class=" wow rollIn" data-wow-delay="0s"><i class="iconfont icon-shouye"></i>首页</li></a>
+                  <a href="#wrap1"><li class=" wow rollIn" data-wow-delay=".3s"><i class="iconfont icon-yishu"></i>艺术</li></a>
+ 		  	   	  	  <a href="#wrap1"><li class=" wow rollIn" data-wow-delay=".6s" ><i class="iconfont icon-yishu"></i>艺术</li></a>
+ 		  	   	  	  <a href="#wrap2"><li class=" wow rollIn" data-wow-delay=".9s"><i style="font-size: 20px;" class="iconfont icon-shantang"></i>风景</li></a>
+ 		  	   	  	  <a href="#wrap3"><li class=" wow rollIn" data-wow-delay="1.2s"><i class="iconfont icon-haitan"></i>沙滩</li></a>
+ 		  	   	  </ul>
+ 		  	   	 </div>    	
+ 		  	 </div>  
+ 		  </div>
+ 		  <div class="topbar-pic"">
+ 		  	
+ 		  </div>
+
+ 		  <div class="top1-con wow bounceInUp " data-wow-duration="2s" data-wow-delay="1.2s">
+ 		  			<h1>世界那么大 我们要去转转</h1>
+ 		  			<p>我最想去的感受丽江的风花雪月，住独具特色的客栈，看历史文化遗迹</p>
+ 		         	<p>想去美丽迷人的三亚看看这处海滩与我家乡的海滩有何不同,沙滩海水蓝天与人融为一体;</p>
+ 		            <p>想去九寨沟体验藏族的风土人情，看看这处被很多电视剧取景入画的魅力之处；想去鼓浪屿，参观中西合璧的建筑物，领略当地纯朴民风，与小家碧玉。</p>
+ 		         
+ 		  	   	    
+ 		  </div>	
+ 	</div>
+    <div class="wrap1" id="wrap1" >
+    	<div class="wrap1-ct">
+    		<div class="wrap1-title">
+    			<h2 class="h2-all">艺术<i class="iconfont icon-yishu"></i></h2>
+    		</div>
+    		<div class="wrap1-pic">
+    		<ul  >
+    			<li class=" wow bounceInLeft" data-wow-duration="2s" data-wow-delay=".7s" style="background-image:url(img/top1/7.jpg);">
+
+    			
+    				
+    					<div class="wrap1-pic-cover">
+    					    <a href="img/top1/7.jpg"><i class="iconfont icon-dianhua2"></i></a>
+    				    </div>
+    			    
+    			</li>
+    			<li class=" wow flipInX" data-wow-duration="1s" style="background-image:url(img/top1/4.jpg); ">
+    			
+    				
+    					<div class="wrap1-pic-cover">
+    					   <a href="img/top1/4.jpg"><i class="iconfont icon-yanhua"></i></a>
+    				    </div>
+    			    
+    			</li>
+    			<li class=" wow bounceInRight" data-wow-duration="2s" data-wow-delay=".7s" style="background-image:url(img/top1/3.jpg); ">
+    				
+    				
+    					<div class="wrap1-pic-cover">
+    					    <a href="img/top1/3.jpg"><i class="iconfont icon-chengshi1"></i></a>
+    				    </div>
+    			    
+    			</li>
+    			<li class=" wow bounceInLeft" data-wow-duration="2s" data-wow-delay=".7s" style="background-image:url(img/top1/8.jpeg); ">
+    				
+    				
+    					<div class="wrap1-pic-cover">
+    					   <a href="img/top1/8.jpeg"><i class="iconfont icon-xia"></i></a>
+    				    </div>
+    			    
+    			</li>
+    			<li class=" wow flipInX" data-wow-duration="1s" style="background-image:url(img/top1/5.jpg); ">
+    			
+    					<div class="wrap1-pic-cover">
+    					   <a href="img/top1/5.jpg"> <i class="iconfont icon-dengpao"></i></a>
+    				    </div>
+    			    
+    			</li>
+    			<li class=" wow bounceInRight" data-wow-duration="2s" data-wow-delay=".7s" style="background-image:url(img/top1/6.jpg); ">
+    				
+    				
+    					<div class="wrap1-pic-cover">
+    					    <a href="img/top1/6.jpg"><i class="iconfont icon-zhizhang1"></i></a>
+    				    </div>
+    			    
+    			</li>
+    		</ul>
+    	    </div>
+    	</div>
+    </div>
+     
+    <div class="wrap2" id="wrap2">
+    	<div class="wrap2-ct">
+    		<div class="wrap1-title">
+    			<h2 class="h2-all">风景<i style="font-size: 38px;  " class="iconfont icon-shantang"></i></h2>
+    		</div>
+    		<div class="wrap2-pic">
+    			<ul>
+    				<li>
+    					<div class="wrap2-pic-1 wow bounceInRight" data-wow-duration="1.5s" >
+    					    <img src="img/1-1.jpeg">
+						   <div class="wrap2-pic-cover">
+						   	<ul>
+						   		<li></li>
+						   		<a href="img/1-1.jpeg"><li><i class="iconfont icon-ziyuanldpi"></i></li></a>
+						   		<li></li>
+						   	</ul>
+    					    </div>
+						</div>
+						
+    				</li>
+    				<li>
+    					<div class="wrap2-pic-1 wow bounceInLeft" data-wow-duration="1.5s" data-wow-delay=".6s">
+    					    <img src="img/1-2.jpeg">
+						<div class="wrap2-pic-cover">
+    					 	<ul>
+						   		<li></li>
+						   		<a href="img/1-2.jpeg"><li><i class="iconfont icon-ziyuanldpi"></i></li></a>
+						   		<li></li>
+						   	</ul>
+    					</div>
+						</div>
+						
+    				</li>
+    				<li>
+    					<div class="wrap2-pic-1 wow bounceInRight" data-wow-duration="1.5s" data-wow-delay=".2s">
+    					    <img src="img/1-3.jpeg">
+						<div class="wrap2-pic-cover">
+    					 	<ul>
+						   		<li></li>
+						   		<a href="img/1-3.jpeg"><li><i class="iconfont icon-ziyuanldpi"></i></li></a>
+						   		<li></li>
+						   	</ul>
+    					</div>
+						</div>
+						
+    				</li>
+    				<li>
+    					<div class="wrap2-pic-1 wow bounceInLeft" data-wow-duration="1.5s" data-wow-delay="1s">
+    					    <img src="img/1-4.jpeg">
+						<div class="wrap2-pic-cover">
+    					 	<ul>
+						   		<li></li>
+						   		<a href="img/1-4.jpeg"><li><i class="iconfont icon-ziyuanldpi"></i></li></a>
+						   		<li></li>
+						   	</ul>
+    					</div>
+						</div>
+						
+    				</li>
+    			</ul>
+    		</div>
+    	</div>
+    </div>
+    <div class="wrap3" id="wrap3">
+    	<div class="wrap3-ct">
+    		<div class="wrap3-title">
+    			<h2 class="h2-all">沙滩<i class="iconfont icon-haitan"></i></h2>
+    		</div>
+    		<div class="wrap3-l"></div>
+    		<div class="wrap3-r">
+    			<h2>沙滩</h2>
+    			<h3>------心旷神怡</h3>
+    			<p>白色的沙滩上，小青蟹的房子就建在海水清洗过的湿地上，那细细的窗台后面，摆布着它们探究世界的眼神，</p>
+    			<p>它们用惊奇与羞怯看游人们从身边来来去去，带着笑，带着哭，带着欢天喜地，带着死去活来，而它们自己的日子，</p>
+    			<p>冬去春来，平平静静，吉祥安康。</p>
+    		</div>
+
+    	</div>
+    </div>
+    <div class="footer " >
+    	<div class="footer-ct">
+    		<div class="footer-l">
+    			<ul>
+    				<li class="wow rollIn" data-wow-duration="1s" >Power   by   zhangboyu</li>
+    			</ul>
+    		</div>
+    		<div class="footer-r">
+    			<ul>
+    				<li class="wow rollIn" data-wow-duration="1s"><i class="iconfont icon-sheji"></i></li>
+    			</ul>
+    		</div>
+    	</div>
+    </div>
+
+    <!----<script>
+		window.alert('由于为考虑到浏览器性能及图片尺寸的优化问题，所以，弹出此框，是为了让图片加载完全，获得更好的体验。');
+	 </script>--->
+   <script src="js/wow.min.js"></script>
+   <script>
+   if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+   new WOW().init();
+   };
+    </script>
+
+ </body>
+</html>
