@@ -1,4 +1,4 @@
-# learnGit
+# learn
 this is a local sync cloud.
 
 
